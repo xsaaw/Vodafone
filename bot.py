@@ -7,7 +7,7 @@ async def start(update, context):
     await update.message.reply_text("✅ بوت فودافون أونلاين يعمل 24/7!")
 
 if __name__ == "__main__":
-    app = Application.builder().token(8877926312:AAH0wnE3NqpaI4Xsoq8i_2vY4e0yL3zZ9lM).build()
+    app = Application.builder().token(TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     print("🚀 البوت يعمل أونلاين...")
     app.run_polling()
